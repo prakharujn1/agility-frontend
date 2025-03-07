@@ -5,6 +5,7 @@ import React from "react";
 import AdminLayout from "../../components/Layout/AdminLayout";
 import { useAuth } from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import { server } from "../../main";
 
 Modal.setAppElement("#root");
 
@@ -24,7 +25,7 @@ const AdminJobApplications = () => {
 
     const fetchData = async () => {
         try {
-            const jobapplicationsRes = await axios.get("http://localhost:5000/api/jobapplications");
+            const jobapplicationsRes = await axios.get(`${server}/api/jobapplications`);
             setjobapplications(jobapplicationsRes.data);
         } catch (error) {
             console.error("Error fetching data:", error);
@@ -34,7 +35,7 @@ const AdminJobApplications = () => {
 
     const handleDelete = async (_id) => {
         try {
-            await axios.delete(`http://localhost:5000/api/jobapplications/${_id}`);
+            await axios.delete(`${server}/api/jobapplications/${_id}`);
             fetchData(); // Refresh the data after deletion
         } catch (error) {
             console.error("Error deleting:", error);
