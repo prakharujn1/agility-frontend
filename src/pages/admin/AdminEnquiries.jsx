@@ -5,6 +5,7 @@ import React from "react";
 import { useAuth } from "../../context/AuthContext";
 import AdminLayout from "../../components/Layout/AdminLayout";
 import { useNavigate } from "react-router-dom";
+import { server } from "../../main";
 
 Modal.setAppElement("#root");
 
@@ -25,7 +26,7 @@ const AdminEnquiries = () => {
 
     const fetchData = async () => {
         try {
-            const enquiryRes = await axios.get("http://localhost:5000/api/enquiry", {
+            const enquiryRes = await axios.get(`${server}/api/enquiry`, {
                 headers: {
                     Authorization: `Bearer ${token}`, // Include the token in the header
                 },
@@ -43,7 +44,7 @@ const AdminEnquiries = () => {
         if (!isConfirmed) return;
 
         try {
-            await axios.delete(`http://localhost:5000/api/enquiry/${_id}`);
+            await axios.delete(`${server}/api/enquiry/${_id}`);
             fetchData(); // Refresh the data after deletion
         } catch (error) {
             console.error("Error deleting:", error);
