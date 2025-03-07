@@ -11,7 +11,7 @@ const WebinarCard = ({ webinar }) => {
     const { user, role } = useAuth();
 
     const handleCopyLink = () => {
-        navigator.clipboard.writeText(`http://localhost:5173/webinar/${webinar.room_id}`);
+        navigator.clipboard.writeText(`${window.location.origin}/webinar/${webinar.room_id}`);
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
     };
