@@ -60,13 +60,13 @@ const CourseDescription = ({ user }) => {
               token,
             },
           });
-
+          navigate(`/payment-success/${razorpay_payment_id}`)
           await fetchUser();
           await fetchCourses();
           await fetchMyCourse();
           alert(data.message);
           setLoading(false);
-          navigate(`/payment-success/${razorpay_payment_id}`)
+          
         } catch(error){
           alert(error.response?.data?.message || "Something went wrong!");
           setLoading(false);
