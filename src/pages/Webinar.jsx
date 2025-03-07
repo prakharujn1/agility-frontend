@@ -24,7 +24,7 @@ const Webinar = () => {
             sharedLinks: [
                 {
                     name: "Copy link",
-                    url: `http://localhost:5173/webinar/${ROOM_ID}`,
+                    url: `${window.location.origin}/webinar/${ROOM_ID}`,
                 },
             ],
             scenario: {
