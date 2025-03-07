@@ -4,6 +4,7 @@ import Modal from "react-modal";
 import AdminLayout from "../../components/Layout/AdminLayout";
 import { useAuth } from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import { server } from "../../main";
 
 Modal.setAppElement("#root");
 
@@ -26,7 +27,7 @@ const AdminJobListings = () => {
 
     const fetchData = async () => {
         try {
-            const jobListingsRes = await axios.get("http://localhost:5000/api/joblistings");
+            const jobListingsRes = await axios.get(`${server}/api/joblistings`);
             setjobListings(jobListingsRes.data);
         } catch (error) {
             console.error("Error fetching data:", error);
@@ -46,7 +47,7 @@ const AdminJobListings = () => {
 
     const handleDelete = async (_id) => {
         try {
-            await axios.delete(`http://localhost:5000/api/joblistings/${_id}`);
+            await axios.delete(`${server}/api/joblistings/${_id}`);
             fetchData();
         } catch (error) {
             console.error("Error deleting:", error);
@@ -55,7 +56,7 @@ const AdminJobListings = () => {
 
     const handleSubmit = async () => {
         try {
-            await axios.put(`http://localhost:5000/api/joblistings/${modalData._id}`, formData);
+            await axios.put(`${server}/api/joblistings/${modalData._id}`, formData);
             setModalData(null);
             fetchData();
         } catch (error) {
@@ -65,7 +66,7 @@ const AdminJobListings = () => {
 
     const handleCreate = async () => {
         try {
-            await axios.post(`http://localhost:5000/api/joblistings`, formData);
+            await axios.post(`${server}/api/joblistings`, formData);
             setIsCreate(false);
             fetchData();
         } catch (error) {
