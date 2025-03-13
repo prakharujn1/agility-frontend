@@ -1,5 +1,7 @@
 import React from 'react';
 import { features } from "../constants";
+import { industries } from '../constants';
+import { CheckCircle } from 'lucide-react';
 
 const Services = () => {
   return (
@@ -34,6 +36,27 @@ const Services = () => {
           </div>
         </div>
       </section>
+
+
+
+      <section className="py-16 text-white">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold mb-8">Sectors We Revolutionize</h2>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {industries.map((industry, index) => (
+              <div key={index} className="flex items-center gap-4 p-4 border border-gray-700 rounded-lg bg-gray-800 hover:scale-105 transition-transform">
+                <CheckCircle className={`${industry.color} text-3xl`} />
+                <div>
+                  <h3 className="text-xl font-semibold">{industry.name}</h3>
+                  <p className="text-gray-400">{industry.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      
     </div>
   );
 };
