@@ -1,8 +1,6 @@
 import HeroSection from "../components/UI/HeroSection";
-import { CheckCircle } from "lucide-react";
-// import { Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
-import { industries } from "../constants";
+
 
 const Home = () => {
   return (
@@ -42,14 +40,16 @@ const Home = () => {
       </section>
 
 
-
-      {/* 4th section  */}
-      <section className="py-16 text-white">
+      {/* new */}
+      <section className="py-16 text-white ">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center">
+
+
+
           {/* Video Section */}
-          <div className="relative w-full h-[300px] lg:h-[400px]">
+          <div className="flex justify-center">
             <video
-              className="w-full h-full object-cover rounded-lg shadow-lg"
+              className="w-full max-w-xl h-auto rounded-lg shadow-2xl  transition-shadow duration-500 ease-in-out"
               autoPlay
               loop
               muted
@@ -60,127 +60,80 @@ const Home = () => {
           </div>
 
           {/* Text Content */}
-          <div>
+          <div className="p-6 rounded-lg  ">
             <h2 className="text-[#F5FCE1] text-3xl sm:text-4xl lg:text-5xl font-bold font-manrope leading-normal lg:text-start text-center">
-              Our Impact
+            Our Impact
             </h2>
-            <p className="text-gray-300 text-lg mt-4 mb-6 leading-relaxed">
-              From startups to enterprises, our AI-powered solutions optimize operations, enhance decision-making, and drive scalable growth. Our training programs empower individuals with industry-ready AI skills for the future.
+
+            <p className="text-gray-300 mt-4 leading-relaxed text-lg">
+            From startups to enterprises, our AI-powered solutions optimize operations, enhance decision-making, and drive scalable growth. Our training programs empower individuals with industry-ready AI skills for the future.
             </p>
 
-            <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-              At Agility AI, we don’t just create technology—we redefine intelligence. We are :
+            <p className="text-gray-300 mt-4 leading-relaxed text-lg">
+            At Agility AI, we don’t just create technology — we redefine intelligence. We are :
             </p>
+          
 
-            <div className="mt-4 space-y-4">
-              <div className="flex gap-3">
-                <span className="text-green-400 text-3xl">🔹</span>
-                <p className="text-gray-300 text-lg">
-                  <strong>Empowering Businesses:</strong> Integrating AI for automation, efficiency, and innovation.
-                </p>
-              </div>
+            <ul className="text-gray-300 space-y-3 mt-4 text-lg">
+              <li><span className={`text-2xl`}>🔹</span> <strong>Empowering Businesses : </strong>  Integrating AI for automation, efficiency, and innovation.</li>
+              <li><span className={`text-2xl`}>🔹</span> <strong>Bridging the AI Skill Gap : </strong> Providing hands-on AI training for all expertise levels.</li>
+              <li><span className={`text-2xl`}>🔹</span><strong>Shaping the Future : </strong> Developing ethical AI solutions that create positive societal change.</li>
+            </ul>
 
-              <div className="flex gap-3">
-                <span className="text-blue-400 text-3xl">🔹</span>
-                <p className="text-gray-300 text-lg">
-                  <strong>Bridging the AI Skill Gap:</strong> Providing hands-on AI training for all expertise levels.
-                </p>
-              </div>
-
-              <div className="flex gap-3">
-                <span className="text-yellow-400 text-3xl">🔹</span>
-                <p className="text-gray-300 text-lg">
-                  <strong>Shaping the Future:</strong> Developing ethical AI solutions that create positive societal change.
-                </p>
-              </div>
-            </div>
-
-            {/* Stats Section */}
-            {/* <div className="grid grid-cols-2 gap-6 mt-6">
-              <div className="p-4 bg-gray-800 rounded-lg text-center">
-                <h4 className="text-3xl font-bold text-white">33+</h4>
-                <p className="text-gray-400">Years of Experience</p>
-              </div>
-              <div className="p-4 bg-gray-800 rounded-lg text-center">
-                <h4 className="text-3xl font-bold text-white">125+</h4>
-                <p className="text-gray-400">Successful Projects</p>
-              </div>
-              <div className="p-4 bg-gray-800 rounded-lg text-center">
-                <h4 className="text-3xl font-bold text-white">26</h4>
-                <p className="text-gray-400">Industry Awards</p>
-              </div>
-              <div className="p-4 bg-gray-800 rounded-lg text-center">
-                <h4 className="text-3xl font-bold text-white">99%</h4>
-                <p className="text-gray-400">Client Satisfaction</p>
-              </div>
-            </div> */}
           </div>
+
+          
         </div>
       </section>
+
+
+
 
       {/* why agility ai */}
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+          <div className="flex flex-col-reverse lg:flex-row items-center gap-8">
 
-            {/* Text Section */}
-      <div className="max-w-2xl">
-        <h2 className="bg-clip-text text-4xl sm:text-5xl font-bold font-manrope leading-normal lg:text-start text-center max-w-2xl whitespace-nowrap">
-          Why choose Agility AI?
-        </h2>
-
-        <p className="text-gray-300 text-lg mt-4 leading-relaxed lg:text-start text-center">
-          Empowering businesses with cutting-edge AI solutions, hands-on learning, and ethical innovation for a future-ready world.
-        </p>
-
-        <div className="mt-6 space-y-4">
-          {[
-            { color: "text-green-400", text: " Industry-Specific AI Solutions : Tailored to your business needs." },
-            { color: "text-blue-400", text: " Practical AI Training : Real-world applications for skill development." },
-            { color: "text-yellow-400", text: " End-to-End AI Services : Strategy, development, consulting & education." },
-            { color: "text-purple-400", text: " Ethical & Transparent AI : Responsible, fair, and accountable AI practices." },
-            { color: "text-green-400", text: " Future-Ready Innovation : Stay ahead with continuous AI advancements." }
-          ].map((item, index) => (
-            <div key={index} className="flex gap-2">
-              <span className={`${item.color} text-3xl`}>🔹</span>
-              <p className="text-gray-300 text-lg"><strong>{item.text.split(":")[0]}:</strong>{item.text.split(":")[1]}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-            {/* Image Section */}
-            <div className="mt-8 md:mt-0">
+            {/* Image Section (Always Below on Small Screens) */}
+            <div className="flex justify-center lg:w-1/2">
               <img
                 src="https://plus.unsplash.com/premium_photo-1661329955912-ebc4279f3b21?w=800&auto=format&fit=crop&q=60"
                 alt="AI Innovation"
-                className="w-full md:h-[450px] object-cover rounded-lg shadow-lg border border-gray-700 hover:scale-105 transition-all duration-300"
+                className="w-full max-w-[600px] h-auto lg:h-[450px] object-cover rounded-lg shadow-lg border border-gray-700 hover:scale-105 transition-all duration-300"
               />
+            </div>
+
+            {/* Text Section (Always First) */}
+            <div className="max-w-2xl lg:w-1/2">
+            <h2 className="text-[#F5FCE1] text-3xl sm:text-4xl lg:text-5xl font-bold font-manrope leading-normal lg:text-start text-center">
+                Why choose AgilityAI?
+              </h2>
+
+              <p className="text-gray-300 text-lg leading-relaxed lg:text-start text-center">
+                Empowering businesses with cutting-edge AI solutions, hands-on learning, and ethical innovation for a future-ready world.
+              </p>
+
+              <div className="mt-6 space-y-4">
+                {[
+                  { color: "text-green-400", text: " Industry-Specific AI Solutions : Tailored to your business needs." },
+                  { color: "text-blue-400", text: " Practical AI Training : Real-world applications for skill development." },
+                  { color: "text-yellow-400", text: " End-to-End AI Services : Strategy, development, consulting & education." },
+                  { color: "text-purple-400", text: " Ethical & Transparent AI : Responsible, fair, and accountable AI practices." },
+                  { color: "text-green-400", text: " Future-Ready Innovation : Stay ahead with continuous AI advancements." }
+                ].map((item, index) => (
+                  <div key={index} className="flex gap-2">
+                    <span className={`${item.color} text-3xl`}>🔹</span>
+                    <p className="text-gray-300 text-lg">
+                      <strong>{item.text.split(":")[0]}:</strong>{item.text.split(":")[1]}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
 
           </div>
         </div>
       </section>
-
-
-
-      <section className="py-16 text-white">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold mb-8">Sectors We Revolutionize</h2>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {industries.map((industry, index) => (
-              <div key={index} className="flex items-center gap-4 p-4 border border-gray-700 rounded-lg bg-gray-800 hover:scale-105 transition-transform">
-                <CheckCircle className={`${industry.color} text-3xl`} />
-                <div>
-                  <h3 className="text-xl font-semibold">{industry.name}</h3>
-                  <p className="text-gray-400">{industry.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
 
 
       <section className="relative py-20 text-white text-center overflow-hidden">
@@ -188,22 +141,30 @@ const Home = () => {
         <div className="absolute inset-0 opacity-10 blur-3xl"></div>
 
         <div className="relative container mx-auto px-6">
-          {/* <Sparkles className="mx-auto text-yellow-400 text-6xl animate-pulse mb-4" /> */}
+         
 
           <h2 className="text-4xl font-bold bg-clip-text text-white ">
             Join the AI Revolution
           </h2>
 
           <p className="text-lg text-gray-300 mt-4 max-w-2xl mx-auto leading-relaxed">
-            <span className="italic">"The best way to predict the future is to create it."</span>
-            AI is not just a trend—it is the backbone of tomorrow. At{" "}
-            <span className="text-blue-400 font-semibold">Agility AI Pvt Ltd</span>, we believe in harnessing
-            the power of artificial intelligence to drive innovation, efficiency, and growth.
-            <br /><br />
-            Whether you're a business aiming to optimize operations or an individual striving to master AI,
-            we provide the knowledge, tools, and real-world expertise to help you thrive in an AI-powered world.
+            AI is reshaping the future, be a part of it!
+          </p>
+
+          <p className="text-lg text-gray-300 mt-4 max-w-2xl mx-auto leading-relaxed">
+            At{" "}
+            <span className="text-blue-400 font-semibold">Agility AI Pvt Ltd</span>, we empower businesses and individuals with AI-driven solutions, hands-on learning, and futute-ready innovation.
+            <br/>
+            <br/>
+            
+            Optimize Operations with AI-powered efficiency.
+            <br/>
+            Gain AI expertise through real-world applications.
+            <br/>
+            Unlock New Opportunities in an AI-driven world.
+                
             <span className="block mt-4 text-blue-400 font-semibold">
-              "Opportunities don't happen. You create them." — Let AI be your key to unlocking the future.
+              Let's build the future together - connect with us today !
             </span>
           </p>
 
