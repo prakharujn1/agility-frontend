@@ -34,27 +34,26 @@ const About = () => {
                 alt="about Us image"
               />
             </div>
+
             <div className="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
-              <div className="w-full flex-col justify-center items-start gap-8 flex">
+              <div className="w-full flex flex-col justify-center items-start gap-8 ">
                 <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
-                  <h2 className="text-[#F5FCE1] text-3xl sm:text-4xl lg:text-5xl font-bold font-manrope leading-normal lg:text-start text-center">
+                  <h2 className="text-[#F5FCE1] text-3xl sm:text-4xl lg:text-5xl font-bold font-manrope leading-normal lg:text-start text-center mb-3">
                     The Agility AI Story
                   </h2>
-                  <p className="text-gray-300 text-base font-normal leading-relaxed lg:text-start text-center">
-                    In a world where technology was advancing at an unprecedented pace, a small team of passionate innovators saw a gap—AI was revolutionizing industries, yet many businesses and individuals struggled to harness its true potential. They envisioned a future where AI wasn’t just a buzzword but a driving force for progress, accessible to all.
+                  <p className="text-gray-300 text-lg font-normal leading-relaxed lg:text-start text-center mb-2">
+                  In a rapidly advancing technological landscape, a passionate team of innovators recognized a critical challenge.
                   </p>
-                  <p className="text-gray-300 text-base font-normal leading-relaxed lg:text-start text-center">
-                    With this vision, Agility AI Pvt Ltd was born. What started as a bold idea soon became a movement—helping businesses integrate AI seamlessly while empowering students and professionals with real-world AI skills. From automating business processes to designing custom AI solutions, Agility AI grew into a force of transformation, shaping industries and redefining what’s possible.
+                  <p className="text-gray-300 text-lg font-normal leading-relaxed lg:text-start text-center mb-2">
+                  While AI was revolutionizing various industries, many businesses and individuals struggled to unlock its full potential.
                   </p>
-                  <p className="text-gray-300 text-base font-normal leading-relaxed lg:text-start text-center">
-                    But it wasn’t just about technology; it was about people. The company believed in ethical AI, ensuring that innovation served humanity responsibly. Their AI education programs trained countless individuals, turning curiosity into expertise and ambition into success.
-                  </p>
-                  <p className="text-gray-300 text-base font-normal leading-relaxed lg:text-start text-center">
-                    Today, Agility AI stands as a testament to the power of vision, adaptability, and relentless pursuit of excellence. The journey continues, driven by a simple yet powerful belief—AI is not just about the future; it’s about creating a smarter, more empowered world today.
+                  <p className="text-gray-300 text-lg font-normal leading-relaxed lg:text-start text-center mb-2">
+                  Our vision at Agility AI Pvt Ltd is to transform AI from a mere buzzword into a powerful force for progress that everyone can access.
                   </p>
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       </section>
@@ -71,22 +70,12 @@ const About = () => {
                 Our Mission
               </h2>
               <p className="text-gray-300 text-lg font-light mt-6 leading-relaxed lg:text-start text-center">
-                At Agility AI Pvt Ltd, our mission is to
-                harness the power of artificial intelligence to drive innovation, efficiency, and accessibility.
-                We envision a world where AI seamlessly integrates with human intelligence to create smarter, faster, and more impactful solutions.
+              Agility AI began as a bold idea and has since evolved into a movement dedicated to empowering businesses and individuals alike. We specialize in:
               </p>
-              <p className="text-gray-300 text-lg font-light mt-4 leading-relaxed lg:text-start text-center">
-                Our commitment extends beyond technology — we believe in
-                AI literacy and ethical AI development. We strive to empower businesses with
-                cutting-edge AI-driven solutions, while also ensuring that individuals are equipped
-                with the knowledge and tools to navigate the AI revolution.
-              </p>
-              <p className="text-gray-300 text-lg font-light mt-4 leading-relaxed lg:text-start text-center">
-                <span className="italic text-[#70FCEF]">"The future belongs to those who prepare for it today".
-                </span>
-                Our AI-driven solutions are not just about innovation; they are about shaping a
-                better, more intelligent future for all.
-              </p>
+              <ul className="text-gray-300 space-y-3 mt-4">
+              <li><span className={`text-2xl`}>🔹</span><strong>Seamless AI Integration : </strong>Helping businesses automate processes and enhance efficiency with tailored AI solutions.</li>
+              <li><span className={`text-2xl`}>🔹</span> <strong>Education and Skills Development : </strong>Offering comprehensive programs that equip students and professionals with practical AI skills for the real world.</li>
+            </ul>
             </div>
 
             {/* Image Section */}
@@ -174,7 +163,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center">
 
           {/* Text Content */}
-          <div className="p-6 rounded-lg shadow-lg ">
+          <div className="p-6 rounded-lg  ">
             <h2 className="text-[#F5FCE1] text-3xl sm:text-4xl lg:text-5xl font-bold font-manrope leading-normal lg:text-start text-center">
               The Future with Agility AI
             </h2>
@@ -186,15 +175,11 @@ const About = () => {
             </p>
 
             <ul className="text-gray-300 space-y-3 mt-4">
-              <li>🔹 <strong>Smarter Businesses:</strong> AI-powered automation, data-driven insights, and intelligent decision-making.</li>
-              <li>🔹 <strong>Empowered Workforce:</strong> Practical AI training that equips individuals with future-ready skills.</li>
-              <li>🔹 <strong>Industry Transformation:</strong> AI solutions that drive efficiency, growth, and sustainability.</li>
+              <li><span className={`text-2xl`}>🔹</span> <strong>Smarter Businesses:</strong> AI-powered automation, data-driven insights, and intelligent decision-making.</li>
+              <li><span className={`text-2xl`}>🔹</span> <strong>Empowered Workforce:</strong> Practical AI training that equips individuals with future-ready skills.</li>
+              <li><span className={`text-2xl`}>🔹</span> <strong>Industry Transformation:</strong> AI solutions that drive efficiency, growth, and sustainability.</li>
             </ul>
 
-            <p className="text-gray-300 mt-6 font-semibold">
-              As AI continues to shape the world, Agility AI is here to lead the way.
-              The future is intelligent—are you ready to be a part of it? 🚀
-            </p>
           </div>
 
           {/* Video Section */}
@@ -227,26 +212,21 @@ const About = () => {
           </div>
 
           {/* Text Content */}
-          <div className="p-6 rounded-lg shadow-lg ">
+          <div className="p-6 rounded-lg ">
             <h2 className="text-[#F5FCE1] text-3xl sm:text-4xl lg:text-5xl font-bold font-manrope leading-normal lg:text-start text-center">
               Our Commitment to Ethical AI
             </h2>
 
             <p className="text-gray-300 mt-4 leading-relaxed">
-              At Agility AI, we are dedicated to developing AI solutions that prioritize ethics, fairness, and responsibility.
-              Our approach ensures AI remains a force for good, empowering society without compromising integrity.
+            At Agility AI, we believe that technology should serve humanity. That's why we prioritize ethical AI practices, ensuring our innovations contribute positively to society. Our education initiatives have transformed countless curious minds into skilled professionals, fostering ambition and driving success.
             </p>
 
             <ul className="text-gray-300 space-y-3 mt-4">
-              <li>✅ <strong>Fairness:</strong> AI that avoids biases and promotes inclusivity.</li>
-              <li>✅ <strong>Transparency:</strong> Explainable AI models that build trust.</li>
-              <li>✅ <strong>Accountability:</strong> Responsible development with human oversight.</li>
-              <li>✅ <strong>Privacy & Security:</strong> Protecting user data with strict safeguards.</li>
+              <li><span className={`text-2xl`}>🔹</span><strong>Fairness:</strong> AI that avoids biases and promotes inclusivity.</li>
+              <li><span className={`text-2xl`}>🔹</span><strong>Transparency:</strong> Explainable AI models that build trust.</li>
+              <li><span className={`text-2xl`}>🔹</span><strong>Accountability:</strong> Responsible development with human oversight.</li>
+              <li><span className={`text-2xl`}>🔹</span><strong>Privacy & Security:</strong> Protecting user data with strict safeguards.</li>
             </ul>
-
-            <p className="text-gray-300 mt-6 font-semibold">
-              Ethical AI isn’t just a priority—it’s our responsibility. Join us in shaping an AI-driven future built on trust. 🚀
-            </p>
           </div>
         </div>
       </section>
