@@ -79,7 +79,7 @@ const Careers = () => {
                                             className="w-full py-3 bg-gradient-to-r from-teal-400 to-blue-600 text-white text-lg font-semibold rounded-lg hover:scale-105 transition"
                                             onClick={() => navigate(`/jobs/${job._id}`)}
                                         >
-                                            Apply Now 🚀
+                                            Apply Now 
                                         </button>
                                     </div>
                                 </div>
