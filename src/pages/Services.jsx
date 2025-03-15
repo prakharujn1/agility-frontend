@@ -38,7 +38,7 @@ const Services = () => {
       </section>
 
 
-
+{/* 
       <section className="py-16 text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold mb-8">Sectors We Revolutionize</h2>
@@ -54,7 +54,7 @@ const Services = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       
     </div>
