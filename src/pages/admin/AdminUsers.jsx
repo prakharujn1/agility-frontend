@@ -51,6 +51,7 @@ const AdminUsers = () => {
         } catch (error) {
             toast.error(error.response?.data?.message || "Failed to update role");
         }
+        setEmail("");
     };
 
 
