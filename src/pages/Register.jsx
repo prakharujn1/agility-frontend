@@ -115,6 +115,12 @@ const Register = () => {
                     </button>
                 )}
             </form>
+                        <p className="mt-4 text-center">
+                            Already have an account?{" "}
+                        <Link to="/login" className="text-blue-500 hover:underline">
+                            Login here
+                        </Link>
+                        </p>
         </div>
     );
 };
