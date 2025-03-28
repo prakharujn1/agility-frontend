@@ -8,7 +8,7 @@ import { WebinarContextProvider } from "./context/WebinarsContext";
 import { ProjectsContextProvider } from './context/ProjectContext.jsx';
 import { Toaster } from 'react-hot-toast';
 
-export const server = " http://localhost:5000";
+export const server = "https://agility-server.onrender.com";
 
 
 createRoot(document.getElementById('root')).render(
