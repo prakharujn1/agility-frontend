@@ -115,13 +115,15 @@ const Register = () => {
                         {btnLoading ? "Please wait..." : "Send OTP"}
                     </button>
                 )}
-            </form>
-                        <p className="mt-4 text-center">
+
+                 <p className="mt-4 text-center">
                             Already have an account?{" "}
                         <Link to="/login" className="text-blue-500 hover:underline">
                             Login here
                         </Link>
-                        </p>
+                </p>
+            </form>
+                       
         </div>
     );
 };
